@@ -1,18 +1,3 @@
-var globalNetworkCheckSettings={
-	href: 'https://dav.yourdomain.net/radicale/',
-	timeOut: 90000,
-	lockTimeOut: 10000,
-	checkContentType: true,
-	settingsAccount: true,
-	delegation: true,
-	additionalResources: [],
-	hrefLabel: null,
-	forceReadOnly: null,
-	ignoreAlarms: false,
-	backgroundCalendars: []
-}
-
-
 /*
 InfCloud - the open source CalDAV/CardDAV Web Client
 Copyright (C) 2011-2015
@@ -347,10 +332,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 // port, ... (client installed into Davical "htdocs" subdirectory;
 // works "out of the box", no additional setup required):
 var globalNetworkCheckSettings={
-	href: location.protocol+'//'+location.hostname+
-		(location.port ? ':'+location.port: '')+
-		location.pathname.replace(RegExp('/+[^/]+/*(index\.html)?$'),'')+
-		'/caldav.php/',
+	href: 'https://dav.yourdomain.net/radicale/',
 	timeOut: 90000,
 	lockTimeOut: 10000,
 	checkContentType: true,
@@ -486,7 +468,7 @@ var globalEnableKbNavigation=true;
 //   uk_UA (Українська [Ukrainian]; thanks Serge Yakimchuck)
 //   zh_CN (中国 [Chinese]; thanks Fandy)
 // Example:
-var globalInterfaceLanguage='en_US';
+var globalInterfaceLanguage='de_DE';
 
 
 // globalInterfaceCustomLanguages
