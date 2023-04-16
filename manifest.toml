@@ -11,10 +11,8 @@ maintainers = ["johndoe"]
 
 [upstream]
 license = "free"
-website = "https://example.com"
-demo = "https://demo.example.com"
+website = "https://inf-it.com"
 admindoc = "https://inf-it.com/infcloud/readme.txt"
-userdoc = "https://yunohost.org/apps"
 code = "https://some.forge.com/example/example"
 
 [integration]
@@ -33,26 +31,11 @@ ram.runtime = "50M"
 
     [install.path]
     type = "path"
-    default = "/example"
+    default = "/infcloud"
 
     [install.init_main_permission]
     type = "group"
     default = "visitors"
-
-    [install.language]
-    ask.en = "Choose the application language"
-    ask.fr = "Choisissez la langue de l'application"
-    type = "string"
-    choices = ["fr", "en"]
-    default = "fr"
-
-    [install.admin]
-    type = "user"
-
-    [install.password]
-    help.en = "Use the help field to add an information for the admin about this question."
-    help.fr = "Utilisez le champ aide pour ajouter une information à l'intention de l'administrateur à propos de cette question."
-    type = "password"
 
 [resources]
 
@@ -66,13 +49,6 @@ ram.runtime = "50M"
 
     [resources.install_dir]
 
-    [resources.data_dir]
-
     [resources.permissions]
     main.url = "/"
 
-    [resources.apt]
-    packages = "deb1, deb2, php8.0-foo, php8.0-bar"
-
-    [resources.database]
-    type = "mysql"
