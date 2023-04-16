@@ -1,3 +1,18 @@
+var globalNetworkCheckSettings={
+	href: 'https://dav.yourdomain.net/radicale/',
+	timeOut: 90000,
+	lockTimeOut: 10000,
+	checkContentType: true,
+	settingsAccount: true,
+	delegation: true,
+	additionalResources: [],
+	hrefLabel: null,
+	forceReadOnly: null,
+	ignoreAlarms: false,
+	backgroundCalendars: []
+}
+
+
 /*
 InfCloud - the open source CalDAV/CardDAV Web Client
 Copyright (C) 2011-2015
